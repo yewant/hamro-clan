@@ -171,7 +171,7 @@ section {
 }
 
 .icons i:hover {
-    color: #4d9559;
+    color: #0011ff;
     transform: translateY(-5px);
 }
 
@@ -187,7 +187,7 @@ section {
     padding: 12px;
     color: #fff;
     font-size: 25px;
-    background: #4d9559;
+    background: #fa2b07;
     border-radius: 30px;
     transition: all .50s ease;
 }
@@ -264,11 +264,32 @@ section {
     header {
         padding: 20px 5%;
     }
-
-    .navlist {
-        display: none; /* Hide the navigation links */
+    #menu-icon {
+        display: block;
+    }
+    .navlist{
+    position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 30vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    
+    .navlist a {
+        margin-left: 0;
+        display: block;
+        margin: 7px 0; 
     }
 
+    .navlist.open {
+        right: 0;
+    }
     .bx-menu {
         display: block;
     }
