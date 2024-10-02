@@ -1,5 +1,5 @@
 let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('navlist');
+let navlist = document.querySelector('.navlist');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
