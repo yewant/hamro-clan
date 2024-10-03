@@ -20,3 +20,5 @@ sr.reveal('.scroll-down',{delay:500, origin:'right'});
 
 sr.reveal('.about-text',{delay:200, origin:'top'});
 sr.reveal('.about-img',{delay:450, origin:'top'});
+
+

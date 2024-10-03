@@ -273,7 +273,7 @@ section {
         right: -100%;
         width: 300px;
         height: 30vh;
-        background: #4d9559;
+        background: linear-gradient(245.59deg, #ecf004 0%, #0011ff 28.53%, #fa2b07 75.52%);
         display: flex;
         align-items: center;
         flex-direction: column;

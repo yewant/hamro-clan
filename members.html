@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Clans Clan Data</title>
+    <style>
+        /* Style the navigation bar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Style the clan members section */
+        #clan-members-section {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .clan-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .clan-member {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .clan-member strong {
+            color: #333;
+        }
+
+        /* Style for the main content area */
+        #main-content {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="clan-members-section" style="display: none;">
+        <h1>Clan Members</h1>
+        <div id="clan-members"></div>
+    </section>
+
+    <script src="js/memberscript.js"></script>
+
+</body>
+
+</html>
