@@ -139,6 +139,9 @@ section {
     margin-right: 5px;
 }
 
+.about-text .hero-text p {
+    font-size: 16px;
+}
 .about-text h1 {
     font-family: "Permanent Marker", cursive;
     font-size: 90px;
@@ -196,6 +199,27 @@ section {
     transform: translateY(-5px);
 }
 
+
+#scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    width: 65px;
+    bottom: 20px; /* Place it at the bottom */
+    right: 30px; /* Place it on the right side */
+    z-index: 99; /* Ensure it is on top of other content */
+    background-color: #FF5733; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No borders */
+    padding: 15px; /* Padding for the button */
+    border-radius: 50%; /* Rounded button */
+    cursor: pointer; /* Pointer/hand icon */
+    font-size: 24px; /* Increase icon size */
+  }
+  
+  #scrollBtn:hover {
+    background-color: #555; /* Darker background on hover */
+  }
+  
 
 /* Default styles are applied for larger screens (desktop) */
 
@@ -272,13 +296,14 @@ section {
         top: 100%;
         right: -100%;
         width: 300px;
-        height: 30vh;
+        height: 40vh;
         background: linear-gradient(245.59deg, #ecf004 0%, #0011ff 28.53%, #fa2b07 75.52%);
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 50px 20px;
         transition: all .55s ease;
+        border-radius: 20px;
     }
     
     .navlist a {
@@ -289,6 +314,7 @@ section {
 
     .navlist.open {
         right: 0;
+        height: 35vh;
     }
     .bx-menu {
         display: block;
@@ -301,11 +327,12 @@ section {
 
     .hero-img img {
         width: 100%;
-        max-width: 300px;
+        margin-right: 130px;
+        max-width: 500px;
     }
 
     .about-img img {
-        width: 120px;
+        width: 200px;
         margin: 50px auto;
     }
 
@@ -352,12 +379,52 @@ section {
         margin: 20px 0;
         font-size: 20px;
     }
+
+    #scrollBtn {
+        width: 50px; /* Reduce button size */
+        padding: 10px; /* Adjust padding for smaller screens */
+        bottom: 15px; /* Adjust positioning for smaller screens */
+        right: 15px; /* Adjust positioning for smaller screens */
+        font-size: 20px; /* Adjust icon size */
+    }
 }
 
 /* Small mobile screens (below 480px) */
 @media screen and (max-width: 480px) {
     header {
-        padding: 15px 5%;
+        padding: 10px 3%;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 300px;
+            height: 40vh;
+            background: linear-gradient(245.59deg, #ecf004 0%, #0011ff 28.53%, #fa2b07 75.52%);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 20px;
+            transition: all .55s ease;
+            border-radius: 20px;
+        }
+    
+    .navlist a {
+        margin-left: 0;
+        display: block;
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    .navlist.open {
+        right: 0;
+        height: 35vh;
+    }
+
+    .bx-menu {
+        display: block;
     }
 
     .hero {
@@ -367,56 +434,170 @@ section {
 
     .hero-img img {
         width: 100%;
-        max-width: 250px;
+        max-width: 350px; /* Further reduce max width */
     }
 
     .about-img img {
-        width: 100px;
-        margin: 30px auto;
+        width: 160px; /* Reduced image width */
+        margin: 30px auto; /* Adjusted margin */
     }
 
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 36px; /* Further reduced font size */
     }
 
     .about-text h1 {
-        font-size: 36px;
+        font-size: 36px; /* Further reduced font size */
     }
 
+    .about-text .hero-text p {
+        font-size: 16px;
+    }
     section {
-        padding: 5% 4%;
-        padding-top: 30%;
+        padding: 6% 3%; /* Further reduced padding */
+        padding-top: 12%;
     }
 
     .hero-text h4 {
-        font-size: 12px;
+        font-size: 10px; /* Further reduced font size */
     }
 
     .hero-text h5 {
-        font-size: 8px;
+        font-size: 8px; /* Further reduced font size */
     }
 
     .hero-text p {
-        font-size: 12px;
+        font-size: 11px; /* Further reduced font size */
     }
 
     .hero-text a {
-        padding: 7px 12px;
-        font-size: 11px;
+        padding: 5px 10px; /* Further reduced button padding */
+        font-size: 10px; /* Further reduced button font size */
     }
 
     .scroll-down {
-        bottom: 2%;
-        right: 3%;
+        bottom: 6%; /* Adjusted position */
+        right: 5%;
     }
 
     .icons {
-        padding: 0 4%;
+        padding: 0 3%;
     }
 
     .icons i {
-        margin: 15px 0;
-        font-size: 18px;
+        margin: 10px 0; /* Further reduced icon margin */
+        font-size: 16px; /* Further reduced icon size */
+    }
+
+    #scrollBtn {
+        width: 40px; /* Further reduced button size */
+        padding: 6px; /* Further reduced padding */
+        bottom: 8px; /* Adjusted position */
+        right: 8px; /* Adjusted position */
+        font-size: 16px; /* Further reduced icon size */
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 15px 5%; /* Adjust padding for smaller screens */
+    }
+    #menu-icon {
+        display: block; /* Show the menu icon */
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px; /* Adjust width for smaller screens */
+        height: 25vh; /* Adjust height */
+        background: linear-gradient(245.59deg, #ecf004 0%, #0011ff 28.53%, #fa2b07 75.52%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 15px; /* Adjust padding */
+        transition: all .55s ease;
+        border-radius: 20px;
+    }
+    
+    .navlist a {
+        margin-left: 0;
+        display: block;
+        margin: 6px 0; /* Adjust margin */
+    }
+
+    .navlist.open {
+        right: 0;
+    }
+
+    .bx-menu {
+        display: block; /* Ensure the menu icon is shown */
+    }
+
+    .hero {
+        grid-template-columns: 1fr; /* Single-column layout for small screens */
+        text-align: center; /* Center text */
+    }
+
+    .hero-img img {
+        width: 100%; /* Full-width image */
+        margin-right: 0; /* Remove margin */
+        max-width: 400px; /* Adjust max width */
+    }
+
+    .about-img img {
+        width: 180px; /* Adjust width */
+        margin: 40px auto; /* Adjust margin */
+    }
+
+    .hero-text h1, .about-text h1 {
+        font-size: 42px; /* Adjust font size for headings */
+    }
+
+    section {
+        padding: 8% 5%; /* Adjust padding */
+        padding-top: 15%; /* Adjust top padding */
+    }
+
+    .hero-text h4 {
+        font-size: 12px; /* Smaller subheadings */
+    }
+
+    .hero-text h5 {
+        font-size: 9px; /* Even smaller sub-subheadings */
+    }
+
+    .hero-text p {
+        font-size: 12px; /* Smaller paragraph text */
+    }
+
+    .hero-text a {
+        padding: 6px 12px; /* Adjust button padding */
+        font-size: 11px; /* Smaller button text */
+    }
+
+    .scroll-down {
+        bottom: 3%;
+        right: 5%; /* Keep scroll down button in place */
+    }
+
+    .icons {
+        padding: 0 5%; /* Adjust padding for icons section */
+    }
+
+    .icons i {
+        margin: 15px 0; /* Adjust margin between icons */
+        font-size: 18px; /* Smaller icon size */
+    }
+
+    #scrollBtn {
+        width: 45px; /* Further reduce button size */
+        padding: 8px; /* Adjust padding for smaller screens */
+        bottom: 10px; /* Adjust positioning for smaller screens */
+        right: 10px; /* Adjust positioning for smaller screens */
+        font-size: 18px; /* Reduce icon size */
     }
 }
 
