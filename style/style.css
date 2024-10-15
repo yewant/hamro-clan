@@ -128,10 +128,32 @@ section {
     transform: translateX(8px);
 }
 
+.hero-text .discord {
+    display: inline-block;
+    color: #fff;
+    margin-left: 10px;
+    background: #7289DA;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    list-style: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translateX(8px);
+}
+
 .hero-text a.cta {
     background: transparent;
     border: 1px solid white;
     margin-left: 20px;
+    margin-top: 5px;
 }
 
 .hero-text a.cta i {
@@ -278,6 +300,11 @@ section {
         font-size: 13px;
     }
 
+    .hero-text .dicord {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
     .icons {
         padding: 0 7%;
     }
@@ -362,6 +389,11 @@ section {
     }
 
     .hero-text a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .hero-text .discord {
         padding: 8px 15px;
         font-size: 12px;
     }
@@ -475,6 +507,11 @@ section {
         font-size: 10px; /* Further reduced button font size */
     }
 
+    .hero-text .discord {
+        padding: 5px 10px; /* Further reduced button padding */
+        font-size: 10px; /* Further reduced button font size */
+    }
+
     .scroll-down {
         bottom: 6%; /* Adjusted position */
         right: 5%;
@@ -574,6 +611,11 @@ section {
     }
 
     .hero-text a {
+        padding: 6px 12px; /* Adjust button padding */
+        font-size: 11px; /* Smaller button text */
+    }
+
+    .hero-text .discord {
         padding: 6px 12px; /* Adjust button padding */
         font-size: 11px; /* Smaller button text */
     }
